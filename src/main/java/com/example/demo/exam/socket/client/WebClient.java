@@ -14,11 +14,12 @@ public class WebClient {
 
     public static void main(String[] args) {
 
+        int number = 6;
         WebSocketClient client = new ReactorNettyWebSocketClient();
         client.execute(
-                        URI.create("ws://localhost:8080/uppercase"),
+                        URI.create("ws://localhost:8080/socketserver"),
                         session -> session.send(
-                                        Mono.just(session.textMessage("1")))
+                                        Mono.just(session.textMessage(String.valueOf(number))))
                                 .thenMany(session.receive()
                                         .map(WebSocketMessage::getPayloadAsText)
                                         .log())
