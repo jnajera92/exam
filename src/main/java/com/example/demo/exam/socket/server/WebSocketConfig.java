@@ -18,7 +18,7 @@ public class WebSocketConfig {
     public HandlerMapping handlerMapping(){
         Map<String, SocketController> handlerMap = new HashMap<>();
         handlerMap.put(
-                "/uppercase", handler
+                "/socketserver", handler
         );
         return new SimpleUrlHandlerMapping(handlerMap, 1);
     }
