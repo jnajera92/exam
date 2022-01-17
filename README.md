@@ -3,9 +3,8 @@ Un palindromo es una palabra o frase que al leerse de izquierda a derecha y vice
 Ejemplos: 
 • luz azul 
 • somos o no somos 
-• oso 
-• ana
---------------------------------------------
+• oso
+
 checar clase checkPalindromeMain
  - es una clase main que solicita una palabra desde terminal
 
@@ -13,7 +12,6 @@ checar clase checkPalindromeMain
 
 Programa 2: Crear un socket que mande un número al servidor y este le conteste si es  un número par o no 
 
---------------------------------------------
 - Correr pŕoyecto Spring boot
 - La clase del server es SocketController (ws://localhost:8080/socketserver)
 - El cliente es la clase WebClient
@@ -51,7 +49,6 @@ Response:
 Notas importantes: 
 • Tener en cuenta que el campo date y time no lo regresan en la zona horaria del equipo  donde se consume el servicio
 
---------------------------------------------
 correr proyecto spring boot 
 - El endpoint del servicio es localhost:8080/date tipo GET
 --------------------------------------------
